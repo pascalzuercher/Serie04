@@ -7,6 +7,19 @@ public class Coin {
     }
 
     public boolean flip(){
+        Random rand = new Random();
+        double sidenum = rand.nextInt(0,2);
+        return sidenum == 1;
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        //To Do
+        return super.equals(obj);
+    }
+
+    @Override
+    public String toString() {
+        return "Die Seite ist: "+side;
     }
 }
