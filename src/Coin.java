@@ -1,9 +1,18 @@
 import java.util.Random;
 import java.lang.Math;
 public class Coin {
-    boolean side;
+    private boolean side;
+
     public Coin(){
         this.side=flip();
+    }
+
+    public boolean getSide() {
+        return side;
+    }
+
+    public void setSide(boolean side) {
+        this.side = side;
     }
 
     public boolean flip(){
@@ -13,13 +22,15 @@ public class Coin {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        //To Do
-        return super.equals(obj);
+    public boolean equals(Coin coinobj) {
+        if (this.side == coinobj.getSide())
+            return true;
+        else
+            return false;
     }
 
     @Override
     public String toString() {
-        return "Die Seite ist: "+side;
+        return side ? "Kopf" : "Zahl";
     }
 }
