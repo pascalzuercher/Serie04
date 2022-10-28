@@ -1,6 +1,5 @@
 public class Coin {
-    public Coin(){
-        int test3;
-
+    public static void main(String[] args) {
+        System.out.println("test");
     }
 }
