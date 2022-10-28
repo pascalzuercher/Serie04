@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.lang.Math;
 public class Coin {
     private boolean side;
 
