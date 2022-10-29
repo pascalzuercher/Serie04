@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class PairOfDice {
     private Dice dice1, dice2;
 
@@ -11,27 +12,22 @@ public class PairOfDice {
         dice2.roll();
     }
 
-    public int getPoints(){
-        return dice1.getPoints()+dice2.getPoints();
+    public int[] getPoints(){
+        int[] arr = new int[]{dice1.getPoints(), dice2.getPoints()};
+        return arr;
     }
 
-    public boolean isOne(){
-        return dice1.getPoints()==1 || dice2.getPoints()==1;
+    public void setPoints(int pd1, int pd2){
+        dice1.setPoints(pd1);
+        dice2.setPoints(pd2);
     }
 
-    public Dice getDice1(){return dice1;}
-
-    public Dice getDice1(Dice dice1){
-        return dice2;
+    public int total(){
+        return dice1.getPoints() + dice2.getPoints();
     }
 
-    public void setDice1(Dice dice1){
-        this.dice1 = dice1;
+    @Override
+    public String toString() {
+        return "Die Würfel zeigen: "+dice1.getPoints()+" und "+dice2.getPoints();
     }
-
-    public void setDice2(Dice dice2){
-        this.dice2 = dice2;
-    }
-
-
 }

@@ -7,7 +7,7 @@ public class Dice {
 
 
 
-	// aktuelle Punktezahl des W�rfels
+	// aktuelle Punktezahl des Würfels
 	private int points;
 
 	// Objekt zur Erzeugung von Zufallszahlen
