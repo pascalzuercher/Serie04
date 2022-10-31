@@ -1,4 +1,8 @@
-import java.util.Arrays;
+// Pascal Zürcher, Matrikelnummer: 22-111-314
+// Leandro Lüthi. Matrikelnummer: 22-105-035
+
+
+
 public class PairOfDiceTest {
     public static void main(String[] args) {
         PairOfDice pair = new PairOfDice();

@@ -1,3 +1,7 @@
+// Pascal Zürcher, Matrikelnummer: 22-111-314
+// Leandro Lüthi. Matrikelnummer: 22-105-035
+
+
 import java.util.Random;
 
 public class Dice {

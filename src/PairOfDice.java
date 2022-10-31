@@ -1,5 +1,9 @@
 import java.util.Arrays;
 public class PairOfDice {
+    // Pascal Zürcher, Matrikelnummer: 22-111-314
+// Leandro Lüthi. Matrikelnummer: 22-105-035
+
+
     private Dice dice1, dice2;
 
     public PairOfDice(){

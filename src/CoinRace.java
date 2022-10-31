@@ -1,3 +1,7 @@
+// Pascal Zürcher, Matrikelnummer: 22-111-314
+// Leandro Lüthi. Matrikelnummer: 22-105-035
+
+
 public class CoinRace {
     public static void main(String[] args) {
         //Variablen
@@ -13,7 +17,7 @@ public class CoinRace {
             else countc1=0;
             if(coin2.getSide()) countc2++;
             else countc2=0;
-            System.out.println("Runde "+round+":"+coin1.toString()+" "+coin2.toString());
+            System.out.println("Runde "+round+": "+coin1+" "+coin2);
             coin1.flip();
             coin2.flip();
             round++;
