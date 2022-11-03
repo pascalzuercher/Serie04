@@ -33,5 +33,11 @@ public class CoinRace {
         else
             System.out.println("Etwas ist schiefgegangen");
         //else programmiert, damit im Notfall nicht ein falscher Gewinner ausgegeben wird
+
+
+        // Testen der equals-Methode
+        System.out.println(" ");
+        System.out.println("Die Münzen sind: "+coin1+" und "+coin2);
+        System.out.println(coin1.equals(coin2));
     }
 }

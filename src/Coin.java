@@ -22,14 +22,9 @@ public class Coin {
             this.side = false;
     }
 
-    @Override
-    public boolean equals(Object coinobj) {
-        if(this == coinobj)
-            return true;
-        else if(coinobj==null || getClass() != coinobj.getClass())
-            return false;
-        Coin coin = (Coin) coinobj;
-        return getSide() == coin.getSide();
+
+    public boolean equals(Coin otherCoin){
+        return this.side == otherCoin.getSide();
     }
 
     @Override
